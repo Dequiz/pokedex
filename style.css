@@ -1,0 +1,84 @@
+/*Estética Podedex*/
+.externo{
+    width: 320px;
+    height: 420px;
+    background-color: red;
+    display: flex;
+    justify-content: flex-end;
+}
+.dentro{
+    width: 300px;
+    height: 400px;
+    background-color: rgb(248, 56, 56);
+    display: flex;
+    justify-content: flex-start;
+}
+.cameraExterna{
+    background-color: white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border: solid black 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.camera{
+    background-image: linear-gradient(cyan, rgb(80, 0, 80), rgb(240, 106, 129));
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: solid black 2px;
+}
+/*bolinhas da parte estética*/
+.redBall, .yellowBall, .greenBall{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    border: solid black 2px;
+}
+.bolinhas{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
+.redBall{
+    background-image: linear-gradient(rgb(240, 106, 129), purple, red);
+}
+.yellowBall{
+    background-image: linear-gradient(yellow, rgb(133, 182, 17), green);
+}
+.greenBall{
+    background-image: linear-gradient(yellow, green, green);
+}
+.trianguloPorta{
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-left: 25px solid rgb(255, 251, 0);
+    border-bottom: 10px solid transparent;
+  }
+.portaExterna{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 999;
+    align-self: center;
+    position: absolute;
+    right: 775px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    transition: all ease-in-out 5s;
+}
+.pokedex{
+    position: relative;
+    left: 0;
+}
