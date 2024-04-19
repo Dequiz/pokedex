@@ -219,3 +219,14 @@
 }
 /*----------------------------------*/
 /*---------------------------------*/
+@media screen and (max-width:500px){
+    .container{
+        position: relative;
+        right: 30px;
+        top: 100px;
+    }
+    .externo{
+        position: relative;
+        bottom: 106px;
+    }
+}
