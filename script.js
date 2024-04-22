@@ -1,4 +1,5 @@
 let triangulo = document.querySelector('.trianguloPorta')
+let txt = document.querySelector('.texto')
 
 function abrirPokedex() {
     let pokedex = document.querySelector('.pokedex')
@@ -21,6 +22,7 @@ function fecharPokedex() {
     triangulo.style.borderLeft = '25px solid rgb(255,251,0)'
     triangulo.setAttribute('class', 'trianguloPorta')
     setTimeout(desligarTela,500)
+    txt.innerHTML = ''
 }
 function ligarTela(){
     let tela = document.querySelector('.tela')
@@ -33,8 +35,15 @@ function desligarTela(){
 }
 function trocaDePokemon(){
     let tela = document.querySelector('.tela')
-    let aleatorizarPokemon = Math.floor(Math.random() * 151) + 1
-    tela.innerHTML = `<img src='pokemon-number${aleatorizarPokemon}.png'>`
+   
+    let aleatorizarPokemon = Math.floor(Math.random() * 2) + 1
+    let pokemonAparecer = `<img src='pokemon-number${aleatorizarPokemon}.png' class='pokemon-text${aleatorizarPokemon}'>`
+    tela.innerHTML = pokemonAparecer
+    if(aleatorizarPokemon === 1){
+      txt.innerHTML = 'Esse pokemon é incrivel e é de planta'
+    }else if(aleatorizarPokemon === 2){
+        txt.innerHTML = 'Esse pokemon é mais incrivel que o outro pois é sua evolução'
+    }
 }
 triangulo.addEventListener('mouseover', function() {
     if (triangulo.className === 'trianguloPorta') {
