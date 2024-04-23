@@ -63,7 +63,7 @@ function desligarTela(){
 }
 function trocaDePokemon(){
     let tela = document.querySelector('.tela')
-    let aleatorizarPokemon = Math.floor(Math.random() * 80) + 1
+    let aleatorizarPokemon = Math.floor(Math.random() * 151) + 1
     let pokemonAparecer = `<img src='pokemon-number${aleatorizarPokemon}.png' class='pokemon-text${aleatorizarPokemon}'>`
     tela.innerHTML = pokemonAparecer
     if(aleatorizarPokemon === 1){
@@ -386,9 +386,292 @@ function trocaDePokemon(){
         nomePokemon.innerHTML = 'Slowbro'
         txt.innerHTML = ' A evolução de Slowpoke, Slowbro é uma combinação de Slowpoke e uma concha que lhe confere proteção extra e poderes psíquicos amplificados, defendendo-se com sua concha resistente.'
         tipos.innerHTML = water + psychic
-    }
+    }else if(aleatorizarPokemon === 81){
+        nomePokemon.innerHTML = 'Magnemite'
+        txt.innerHTML = ' Um Pokémon Elétrico e Aço que flutua usando seu magnetismo, Magnemite é comummente encontrado em áreas urbanas e industriais, defendendo-se com sua eletricidade.'
+        tipos.innerHTML = eletric + steel
+    }else if(aleatorizarPokemon === 82){
+        nomePokemon.innerHTML = 'Magneton'
+        txt.innerHTML = ' A evolução de Magnemite, Magneton é composto por três Magnemites unidos e é capaz de gerar campos magnéticos poderosos, protegendo-se com sua resistência magnética.'
+        tipos.innerHTML = eletric + steel
+   }else if(aleatorizarPokemon === 83){
+    nomePokemon.innerHTML = `Farfetch'd`
+    txt.innerHTML = `Um Pokémon Normal e Voador conhecido por sua lealdade e por carregar um alho-poró como arma, Farfetch'd é um lutador habilidoso, defendendo-se com seu alho-poró afiado.`
+    tipos.innerHTML = normal + flying
+   }else if(aleatorizarPokemon === 84){
+    nomePokemon.innerHTML = 'Doduo'
+    txt.innerHTML = 'Um pássaro Normal e Voador com duas cabeças que brigam entre si, Doduo é incrivelmente rápido e evolui para se tornar um Dodrio, atacando com suas garras afiadas.'
+    tipos.innerHTML = normal + flying
+   }else if(aleatorizarPokemon === 85){
+    nomePokemon.innerHTML = 'Dodrio'
+    txt.innerHTML = 'A evolução de Doduo, Dodrio é ainda mais rápido e capaz de correr em velocidades incríveis, atacando com seus bicos afiados, defendendo-se com sua velocidade.'
+    tipos.innerHTML = normal + flying
+   }else if(aleatorizarPokemon === 86){
+    nomePokemon.innerHTML = 'Seel'
+    txt.innerHTML = 'Um Pokémon de Água com uma camada de gordura que o protege do frio, Seel é dócil e evolui para se tornar um Dewgong, defendendo-se com sua gordura.'
+    tipos.innerHTML = water
+   }else if(aleatorizarPokemon === 87){
+    nomePokemon.innerHTML = 'Dewgong'
+    txt.innerHTML = 'A evolução de Seel, Dewgong é um Pokémon de Água e Gelo que pode nadar em águas congelantes e lançar ataques gelados, protegendo-se com sua resistência ao frio.'
+    tipos.innerHTML = water + ice
+   }else if(aleatorizarPokemon === 88){
+    nomePokemon.innerHTML = 'Grimir'
+    txt.innerHTML = 'Um Pokémon Veneno conhecido por sua aparência viscosa e odor repugnante, Grimer é comumente encontrado em áreas poluídas, atacando com seu veneno corrosivo.'
+    tipos.innerHTML = poison
+   }else if(aleatorizarPokemon === 89){
+    nomePokemon.innerHTML = 'Muk'
+    txt.innerHTML = 'A evolução de Grimer, Muk é uma massa viscosa e tóxica que emite gases venenosos, muitas vezes sendo encontrada em locais contaminados, defendendo-se com sua imunidade ao veneno.'
+    tipos.innerHTML = poison
+   }else if(aleatorizarPokemon === 90){
+    nomePokemon.innerHTML = 'Shellder'
+    txt.innerHTML = 'Um Pokémon de Água com uma concha em forma de pinça, Shellder é conhecido por sua natureza protetora e evolui para se tornar um Cloyster, defendendo-se com sua concha resistente.'
+    tipos.innerHTML = water
+   }else if(aleatorizarPokemon === 91){
+    nomePokemon.innerHTML = 'Cloyster'
+    txt.innerHTML = 'A evolução de Shellder, Cloyster é uma ostra dura e resistente com uma pérola dentro, capaz de lançar projéteis de gelo em seus inimigos, protegendo-se com sua concha afiada.'
+    tipos.innerHTML = water + ice
+   }else if(aleatorizarPokemon === 92){
+    nomePokemon.innerHTML = 'Gastly'
+    txt.innerHTML = 'Um Pokémon Fantasma e Veneno que se materializa a partir de névoas venenosas, Gastly assombra lugares escuros e evolui para se tornar um Haunter, atacando com seus golpes espectrais.'
+    tipos.innerHTML = ghost + poison
+   }else if(aleatorizarPokemon === 93){
+    nomePokemon.innerHTML = 'Haunter'
+    txt.innerHTML = 'A evolução de Gastly, Haunter é um espírito travesso que gosta de assustar e pregar peças em pessoas desavisadas, evoluindo para se tornar um Gengar, defendendo-se com seus truques fantasmas.'
+    tipos.innerHTML = ghost + poison
+   }else if(aleatorizarPokemon === 94){
+    nomePokemon.innerHTML = 'Gengar'
+    txt.innerHTML = 'O final de Gastly, Gengar é um Pokémon Fantasma e Veneno malicioso que gosta de brincar com suas vítimas enquanto se esconde nas sombras, atacando com suas habilidades psíquicas e venenosas.'
+    tipos.innerHTML = ghost + poison
+   }else if(aleatorizarPokemon === 95){
+    nomePokemon.innerHTML = 'Onix'
+    txt.innerHTML = 'Um Pokémon de Pedra e Terra conhecido por sua imensa força e tamanho, Onix vive em cavernas subterrâneas e é temido por muitos, defendendo-se com sua força física e resistência.'
+    tipos.innerHTML = ground + rock
+   }else if(aleatorizarPokemon === 96){
+    nomePokemon.innerHTML = 'Drowzee'
+    txt.innerHTML = ' Um Pokémon Psíquico com um olfato aguçado, Drowzee se alimenta dos sonhos de seus inimigos e evolui para se tornar um Hypno, atacando com suas habilidades psíquicas.'
+    tipos.innerHTML = psychic
+   }else if(aleatorizarPokemon === 97){
+    nomePokemon.innerHTML = 'Hypno'
+    txt.innerHTML = 'A evolução de Drowzee, Hypno é um hipnotizador habilidoso que pode controlar as mentes dos outros usando seu pêndulo, defendendo-se com suas ilusões e poder mental.'
+    tipos.innerHTML = psychic
+   }else if(aleatorizarPokemon === 98){
+    nomePokemon.innerHTML = 'Krabby'
+    txt.innerHTML = 'Um Pokémon de Água com garras afiadas, Krabby é um excelente lutador subaquático e evolui para se tornar um Kingler, atacando com suas garras poderosas.'
+    tipos.innerHTML = water
+   }else if(aleatorizarPokemon === 99){
+    nomePokemon.innerHTML = 'Kingler'
+    txt.innerHTML = 'A evolução de Krabby, Kingler é um caranguejo gigante com garras poderosas que podem cortar até mesmo as coisas mais duras, defendendo-se com suas pinças afiadas.'
+    tipos.innerHTML = water
+   }else if(aleatorizarPokemon === 100){
+    nomePokemon.innerHTML = 'Voltorb'
+    txt.innerHTML = 'Um Pokémon Elétrico que se assemelha a uma pokébola, Voltorb pode explodir a qualquer momento, liberando eletricidade destrutiva, defendendo-se com suas explosões elétricas.'
+    tipos.innerHTML = eletric
+   }else if(aleatorizarPokemon === 101){
+    nomePokemon.innerHTML = 'Electrode'
+    txt.innerHTML = 'A evolução de Voltorb, Electrode é ainda mais volátil e pode explodir em um flash de luz cegante e eletricidade poderosa, defendendo-se com suas explosões surpresa.'
+    tipos.innerHTML = eletric
+   }else if(aleatorizarPokemon === 102){
+    nomePokemon.innerHTML = 'Exeggcute'
+    txt.innerHTML = 'Um conjunto de ovos de Grama e Psíquico que trabalham juntos como um só, Exeggcute é vulnerável quando separado, evoluindo para se tornar um Exeggutor, atacando com seus frutos.'
+    tipos.innerHTML = grass + psychic
+   }else if(aleatorizarPokemon === 103){
+    nomePokemon.innerHTML = 'Exeggcutor'
+    txt.innerHTML = 'A evolução de Exeggcute, Exeggutor é uma palmeira gigante com cabeças de coco que possuem habilidades psíquicas poderosas, defendendo-se com sua altura e alcance.'
+    tipos.innerHTML = grass + psychic
+   }else if(aleatorizarPokemon === 104){
+    nomePokemon.innerHTML = 'Cubone'
+    txt.innerHTML = 'Um Pokémon Solitário de Terra conhecido por carregar um crânio de sua mãe falecida, Cubone é triste e solitário, evoluindo para se tornar um Marowak, defendendo-se com seu osso.'
+    tipos.innerHTML = ground
+   }else if(aleatorizarPokemon === 105){
+    nomePokemon.innerHTML = 'Marowak'
+    txt.innerHTML = 'A evolução de Cubone, Marowak é mais forte e determinado, protegendo-se com seu osso e atacando com golpes poderosos, defendendo-se com sua lealdade.'
+    tipos.innerHTML = ground
+   }else if(aleatorizarPokemon === 106){
+    nomePokemon.innerHTML = 'Hitmonlee'
+    txt.innerHTML = ' Um mestre de artes marciais com pernas elásticas, Hitmonlee pode esticar suas pernas para atacar com poderosos chutes, defendendo-se com sua agilidade e força.'
+    tipos.innerHTML = fighting
+   }else if(aleatorizarPokemon === 107){
+    nomePokemon.innerHTML = 'Hitmonchan'
+    txt.innerHTML = ' Um mestre de boxe com punhos incrivelmente rápidos, Hitmonchan é capaz de lançar uma série de socos em rápida sucessão, defendendo-se com sua técnica impecável.'
+    tipos.innerHTML = fighting
+   }else if(aleatorizarPokemon === 108){
+    nomePokemon.innerHTML = 'Lickitung'
+    txt.innerHTML = ' Um Pokémon de Língua Normal que pode esticar sua língua para alcançar objetos distantes, Lickitung é conhecido por lamber tudo o que vê, defendendo-se com sua língua pegajosa.'
+    tipos.innerHTML = normal
+   }else if(aleatorizarPokemon === 109){
+    nomePokemon.innerHTML = 'Koffing'
+    txt.innerHTML = ' Um balão de gás venenoso que flutua através do ar, Koffing pode explodir a qualquer momento, liberando gases tóxicos, defendendo-se com sua nuvem de veneno.'
+    tipos.innerHTML = poison
+   }else if(aleatorizarPokemon === 110){
+    nomePokemon.innerHTML = 'Weezing'
+    txt.innerHTML = 'A evolução de Koffing, Weezing é formado por dois Koffings unidos que produzem ainda mais gases venenosos, defendendo-se com seu gás tóxico e explosões de fumaça.'
+    tipos.innerHTML = poison
+   }else if(aleatorizarPokemon === 111 ){
+    nomePokemon.innerHTML = 'Rhyhorn'
+    txt.innerHTML = 'Um Pokémon de Pedra e Terra com uma pele resistente, Rhyhorn é comumente usado como montaria devido à sua força, evoluindo para se tornar um Rhydon, defendendo-se com seus chifres afiados.'
+    tipos.innerHTML = rock + ground
+   }else if(aleatorizarPokemon === 112){
+    nomePokemon.innerHTML = 'Rhydon'
+    txt.innerHTML = 'A evolução de Rhyhorn, Rhydon é imenso e poderoso, capaz de perfurar rochas com seus chifres afiados e lançar ataques devastadores, defendendo-se com sua resistência.'
+    tipos.innerHTML = rock + ground
+   }else if(aleatorizarPokemon === 113){
+    nomePokemon.innerHTML = 'Chansey'
+    txt.innerHTML = 'Um Pokémon Normal conhecido por sua gentileza e por carregar um ovo em sua bolsa, Chansey é uma enfermeira dedicada, protegendo seus ovos com sua vida.'
+    tipos.innerHTML = normal
+   }else if(aleatorizarPokemon === 114){
+    nomePokemon.innerHTML = 'Tangela'
+    txt.innerHTML = 'Um Pokémon de Grama com vinhas longas e grossas que podem enrolar-se em torno de seus inimigos, Tangela é esquivo e difícil de capturar, defendendo-se com suas vinhas.'
+    tipos.innerHTML = grass
+   }else if(aleatorizarPokemon === 115){
+    nomePokemon.innerHTML = 'Kangaskhan'
+    txt.innerHTML = 'Um Pokémon Maternal que protege seus filhotes com ferocidade, Kangaskhan é poderoso e pode lançar poderosos ataques, defendendo sua família com sua força.'
+    tipos.innerHTML = normal
+   }else if(aleatorizarPokemon === 116){
+    nomePokemon.innerHTML = 'Horsea'
+    txt.innerHTML = 'Um Pokémon de Água com uma cabeça em forma de cavalo-marinho, Horsea pode lançar jatos de água de seus bicos, defendendo-se com seus movimentos ágeis na água.'
+    tipos.innerHTML = water
+   }else if(aleatorizarPokemon === 117){
+    nomePokemon.innerHTML = 'Seadra'
+    txt.innerHTML = ' A evolução de Horsea, Seadra é maior e mais poderoso, com habilidades de natação aprimoradas e um poderoso jato de água, defendendo-se com sua resistência.'
+    tipos.innerHTML = water
+   }else if(aleatorizarPokemon === 118){
+    nomePokemon.innerHTML = 'Goldeen'
+    txt.innerHTML = 'Um peixe dourado de Água que brilha em rios e lagos, Goldeen é rápido e ágil, evoluindo para se tornar um Seaking, defendendo-se com seus chifres afiados.'
+    tipos.innerHTML = water
+   }else if(aleatorizarPokemon === 119){
+    nomePokemon.innerHTML = 'Seaking'
+    txt.innerHTML = 'A evolução de Goldeen, Seaking é maior e mais poderoso, com um chifre afiado que pode perfurar rochas e defesas inimigas, defendendo-se com sua força e agilidade.'
+    tipos.innerHTML = water
+   }else if(aleatorizarPokemon === 120){
+    nomePokemon.innerHTML = 'Staryu'
+    txt.innerHTML = 'Um Pokémon de Água com um corpo em forma de estrela que pode se regenerar, Staryu é rápido e ágil, evoluindo para se tornar um Starmie, defendendo-se com seus raios brilhantes.'
+    tipos.innerHTML = water
+   }else if(aleatorizarPokemon === 121){
+    nomePokemon.innerHTML = 'Starmie'
+    txt.innerHTML = 'A evolução de Staryu, Starmie é uma estrela do mar poderosa com habilidades psíquicas e aquáticas, defendendo-se com seus raios brilhantes e poderosos ataques psíquicos.'
+    tipos.innerHTML = water
+   }else if(aleatorizarPokemon === 122){
+    nomePokemon.innerHTML = 'Mr.Mime'
+    txt.innerHTML = 'Um Pokémon Psíquico conhecido por sua habilidade de criar barreiras invisíveis, Mr. Mime é um artista talentoso e protetor, defendendo-se com suas habilidades psíquicas.'
+    tipos.innerHTML = psychic
+   }else if(aleatorizarPokemon === 123){
+    nomePokemon.innerHTML = 'Scyther'
+    txt.innerHTML = ' Um Pokémon Inseto e Voador com lâminas afiadas em seus braços, Scyther é um predador ágil e mortal, defendendo-se com suas garras e asas.'
+    tipos.innerHTML = bug + flying
+   }else if(aleatorizarPokemon === 124){
+    nomePokemon.innerHTML = 'Jynx'
+    txt.innerHTML = ' Um Pokémon de Gelo e Psíquico conhecido por sua graça e beleza, Jynx pode lançar beijos congelantes que podem paralisar seus oponentes, defendendo-se com suas habilidades psíquicas.'
+    tipos.innerHTML = ice + psychic
+   }else if(aleatorizarPokemon === 125){
+    nomePokemon.innerHTML = 'Electabuzz'
+    txt.innerHTML = 'Um Pokémon Elétrico conhecido por sua velocidade e poderosas descargas elétricas, Electabuzz é um lutador habilidoso, defendendo-se com seus ataques elétricos.'
+    tipos.innerHTML = eletric
+   }else if(aleatorizarPokemon === 126){
+    nomePokemon.innerHTML = 'Magmar'
+    txt.innerHTML = 'Um Pokémon de Fogo conhecido por sua pele escaldante e chamas intensas, Magmar é poderoso e pode lançar bolas de fogo que podem derreter metal, defendendo-se com suas chamas.'
+    tipos.innerHTML = fire
+   }else if(aleatorizarPokemon === 127){
+    nomePokemon.innerHTML = 'Pinsir'
+    txt.innerHTML = ' Um Pokémon Inseto conhecido por sua força e mandíbulas poderosas, Pinsir pode esmagar objetos com facilidade, defendendo-se com suas garras afiadas.'
+    tipos.innerHTML = bug 
+   }else if(aleatorizarPokemon === 128){
+    nomePokemon.innerHTML = 'Tauros'
+    txt.innerHTML = 'Um Pokémon de Normal conhecido por sua ferocidade e temperamento violento, Tauros pode carregar adversários com facilidade, defendendo-se com sua força física.'
+    tipos.innerHTML = normal
+   }else if(aleatorizarPokemon === 129){
+    nomePokemon.innerHTML = 'Magikarp'
+    txt.innerHTML = 'Um Pokémon de Água conhecido por sua fraqueza e inutilidade em batalha, Magikarp pode saltar alto, evoluindo para se tornar um Gyarados, defendendo-se com sua fúria.'
+    tipos.innerHTML = water
+   }else if(aleatorizarPokemon === 130){
+    nomePokemon.innerHTML = 'Gyarados'
+    txt.innerHTML = 'A evolução de Magikarp, Gyarados é um dragão do mar poderoso e temido que pode criar maremotos com um simples balançar de sua cauda, defendendo-se com sua fúria e poder.'
+    tipos.innerHTML = water + flying
+   }else if(aleatorizarPokemon === 131){
+    nomePokemon.innerHTML = 'Lapras'
+    txt.innerHTML = ' Um Pokémon de Água e Gelo conhecido por sua gentileza e capacidade de transportar pessoas em suas costas, Lapras é um nadador habilidoso, defendendo-se com sua resistência.'
+    tipos.innerHTML = ice + water
+   }else if(aleatorizarPokemon === 132){
+    nomePokemon.innerHTML = 'Ditto'
+    txt.innerHTML = ' Um Pokémon Normal conhecido por sua habilidade de se transformar em qualquer coisa, Ditto é elusivo e difícil de capturar, defendendo-se com sua capacidade de adaptação.'
+    tipos.innerHTML = normal
+   }else if(aleatorizarPokemon === 133){
+    nomePokemon.innerHTML = 'Eevee'
+    txt.innerHTML = 'Um Pokémon Normal conhecido por sua capacidade de evoluir para várias formas, Eevee é adorável e versátil, evoluindo para se adaptar a diferentes ambientes e desafios.'
+    tipos.innerHTML = normal
+   }else if(aleatorizarPokemon === 134){
+    nomePokemon.innerHTML = 'Vaporeon'
+    txt.innerHTML = 'Uma das evoluções de Eevee, Vaporeon é um Pokémon de Água com uma pelagem que repele a água, permitindo-lhe nadar rapidamente e lançar poderosos ataques aquáticos.'
+    tipos.innerHTML = water
+   }else if(aleatorizarPokemon === 135){
+    nomePokemon.innerHTML = 'Jolteon'
+    txt.innerHTML = 'Uma das evoluções de Eevee, Jolteon é um Pokémon Elétrico com pelos que podem gerar eletricidade estática, permitindo-lhe lançar poderosos ataques elétricos.'
+    tipos.innerHTML = eletric
+   }else if(aleatorizarPokemon === 136){
+    nomePokemon.innerHTML = 'Flareon'
+    txt.innerHTML = ' Uma das evoluções de Eevee, Flareon é um Pokémon de Fogo com uma temperatura corporal extremamente alta, permitindo-lhe lançar poderosos ataques de fogo.'
+    tipos.innerHTML = fire
+   }else if(aleatorizarPokemon === 137){
+    nomePokemon.innerHTML = 'Porygon'
+    txt.innerHTML = 'Um Pokémon Normal artificial criado a partir de código de computador, Porygon pode se mover através de ambientes digitais, defendendo-se com suas habilidades tecnológicas.'
+    tipos.innerHTML = normal
+   }else if(aleatorizarPokemon === 138){
+    nomePokemon.innerHTML = 'Omanyte'
+    txt.innerHTML = 'Um Pokémon de Água e Rocha que foi extinto há milhões de anos, Omanyte é revivido de fósseis e evolui para se tornar um Omastar, defendendo-se com sua concha resistente.'
+    tipos.innerHTML = water + rock
+   }else if(aleatorizarPokemon === 139){
+    nomePokemon.innerHTML = 'Omastar'
+    txt.innerHTML = 'A evolução de Omanyte, Omastar é uma criatura marinha poderosa e antiga com habilidades aquáticas e rochosas, defendendo-se com sua resistência e poder.'
+    tipos.innerHTML = water + rock
+   }else if(aleatorizarPokemon === 140){
+    nomePokemon.innerHTML = 'Kabuto'
+    txt.innerHTML = 'Um Pokémon de Água e Rocha que foi extinto há milhões de anos, Kabuto é revivido de fósseis e evolui para se tornar um Kabutops, defendendo-se com sua carapaça.'
+    tipos.innerHTML = water + rock
+   }else if(aleatorizarPokemon === 141){
+    nomePokemon.innerHTML = 'Kabutops'
+    txt.innerHTML = 'A evolução de Kabuto, Kabutops é uma criatura de água e rocha com lâminas afiadas em seus braços, atacando com golpes rápidos e precisos, defendendo-se com sua destreza.'
+    tipos.innerHTML = water + rock
+   }else if(aleatorizarPokemon === 142){
+    nomePokemon.innerHTML = 'Aerodactyl'
+    txt.innerHTML = 'Um Pokémon de Pedra e Voador que foi extinto há milhões de anos, Aerodactyl é revivido de fósseis e pode voar a velocidades incríveis, atacando com suas mandíbulas poderosas.'
+    tipos.innerHTML = rock + flying 
+   }else if(aleatorizarPokemon === 143){
+    nomePokemon.innerHTML = 'Snorlax'
+    txt.innerHTML = 'Um Pokémon Normal conhecido por sua preguiça e apetite voraz, Snorlax pode bloquear caminhos inteiros enquanto dorme, defendendo-se com sua força e peso.'
+    tipos.innerHTML = normal
+   }else if(aleatorizarPokemon === 144){
+    nomePokemon.innerHTML = 'Articuno'
+    txt.innerHTML = 'Um Pokémon Lendário de Gelo e Voador que pode criar tempestades de gelo, Articuno é majestoso e poderoso, defendendo-se com seus poderes congelantes.'
+    tipos.innerHTML = ice + flying
+   }else if(aleatorizarPokemon === 145){
+    nomePokemon.innerHTML = 'Zapdos'
+    txt.innerHTML = ' Um Pokémon Lendário Elétrico e Voador que pode lançar raios poderosos, Zapdos é rápido e feroz, defendendo-se com seus ataques elétricos.'
+    tipos.innerHTML = eletric + flying
+   }else if(aleatorizarPokemon === 146){
+    nomePokemon.innerHTML = 'Moltres'
+    txt.innerHTML = 'Um Pokémon Lendário de Fogo e Voador que pode criar chamas intensas, Moltres é impressionante e poderoso, defendendo-se com suas chamas ardentes.'
+    tipos.innerHTML = fire + flying
+   }else if(aleatorizarPokemon === 147){
+    nomePokemon.innerHTML = 'Dratini'
+    txt.innerHTML = 'Um Pokémon Dragão raro e misterioso, Dratini é difícil de encontrar e evolui para se tornar um Dragonair, defendendo-se com sua resistência.'
+    tipos.innerHTML = dragon 
+   }else if(aleatorizarPokemon === 148){
+    nomePokemon.innerHTML = 'Dragonair'
+    txt.innerHTML = 'A evolução de Dratini, Dragonair é uma serpente majestosa com poderes psíquicos e aquáticos, defendendo-se com suas habilidades elementares.'
+    tipos.innerHTML = dragon
+   }else if(aleatorizarPokemon === 149){
+    nomePokemon.innerHTML = 'Dragonite'
+    txt.innerHTML = 'O final de Dratini, Dragonite é um dragão lendário que pode voar incrivelmente rápido e lançar ataques poderosos, defendendo-se com sua imensa força e poder.'
+    tipos.innerHTML = dragon + flying
+   }else if(aleatorizarPokemon === 150){
+    nomePokemon.innerHTML = 'Mewtwo'
+    txt.innerHTML = 'Criado artificialmente a partir do DNA de Mew, é um Pokémon Psíquico poderoso e determinado, inicialmente criado como uma arma.'
+    tipos.innerHTML = psychic
+   }else if(aleatorizarPokemon === 151){
+    nomePokemon.innerHTML = 'Mew'
+    txt.innerHTML = 'Um Pokémon Lendário Psíquico, raro e misterioso, que dizem possuir o DNA de todos os Pokémon.'
+    tipos.innerHTML = psychic
+   }
 }
-
 triangulo.addEventListener('mouseover', function() {
     if (triangulo.className === 'trianguloPorta') {
         abrirPokedex();
