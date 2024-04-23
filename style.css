@@ -1,9 +1,19 @@
+/*Configurações Gerais*/
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+*{
+    font-family: 'Poppins';
+}
+/*-----------------------*/
 /*Estética Podedex*/
 .externo{
     width: 320px;
     height: 420px;
     background-color: red;
     display: flex;
+    position: relative;
+    bottom: 12px;
     justify-content: flex-end;
     border-radius: 1rem;
 }
@@ -128,6 +138,7 @@
     align-items: center;
     position: absolute;
     left: 50px;
+    top: 80px;
 }
 
 .firstBall, .secondBall{
@@ -176,25 +187,212 @@
 /*Texto do Resumo Pokemon*/
 .texto{
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    position: relative;
-    top: 160px;
-    right: 0px;
-    width: 200px;
-    height: 100px;
     border-radius: 1rem;
     text-align: center;
-    background-color: green;
+    background-color: rgba(4, 65, 4, 0.993);
+    border: 2px solid black ;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 140px;
+    left: 20px;
+    width: 200px;
+    height: 100px;
+  
 }
 .nomePokemon{
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     position: absolute;
-    top: 50px;
+    top: 15px;
+}
+/*TIPOS POKEMON*/
+.tipos{
+    background-color: gainsboro;
+    width: 50px;
+    height: 100px;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    border: 2px solid black;
 
 }
+/*CORES DOS TIPOS*/
+.poison{
+    background-color: rgb(87, 0, 128);
+    border-radius: 1rem;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    border: 1px solid black;
+    font-family: 'Pixelify Sans';
+}
+.fire{
+    background-color: orangered;
+    border-radius: 1rem;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid black;
+    font-family: 'Pixelify Sans';
+}
+.water{
+    background-color: rgb(4, 89, 185);
+    border-radius: 1rem;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid black;
+    font-family: 'Pixelify Sans';
+}
+.grass{
+    background-color: rgb(81, 129, 9);
+    border-radius: 1rem;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid black;
+    font-family: 'Pixelify Sans';
+}
+.rock{
+    background-color: rgb(148, 121, 85);
+    border-radius: 1rem;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid black;
+    font-family: 'Pixelify Sans';
+}
+.flying{
+    background-color: gainsboro;
+    border-radius: 1rem;
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid black;
+    font-family: 'Pixelify Sans';
+}
+.ice{
+    background-color: rgb(169, 218, 248);
+    border-radius: 1rem;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid black;
+    font-family: 'Pixelify Sans';
+}
+.dragon{
+    background-color: rgb(117, 51, 238);
+    border-radius: 1rem;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid black;
+    font-family: 'Pixelify Sans';
+}
+.fighting{
+    background-color: red;
+    border-radius: 1rem;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid black;
+    font-family: 'Pixelify Sans';
+}
+.steel{
+    background-color: rgb(160, 159, 159);
+    border-radius: 1rem;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid black;
+    font-family: 'Pixelify Sans';
+}
+.normal{
+    background-color: white;
+    border-radius: 1rem;
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid black;
+    font-family: 'Pixelify Sans';
+}
+.dark{
+    background-color: rgb(22, 22, 22);
+    border-radius: 1rem;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid black;
+    font-family: 'Pixelify Sans';
+}
+.ghost{
+    background-color: purple;
+    border-radius: 1rem;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid black;
+    font-family: 'Pixelify Sans';
+}
+.eletric{
+    background-color: rgb(219, 219, 9);
+    border-radius: 1rem;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid black;
+    font-family: 'Pixelify Sans';
+}
+.bug{
+    background-color: rgb(186, 216, 55);
+    border-radius: 1rem;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid black;
+    font-family: 'Pixelify Sans';
+}
+.ground{
+    background-color: rgb(82, 50, 2);
+    border-radius: 1rem;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    border: 1px solid black;
+    font-family: 'Pixelify Sans';
+}
+.psychic{
+    background-color: magenta;
+    border-radius: 1rem;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid black;
+    font-family: 'Pixelify Sans';
+}
+.fairy{
+    background-color: pink;
+    border-radius: 1rem;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid black;
+    font-family: 'Pixelify Sans';
+}
+/*-----------------*/
+
+/*-------------------*/
+
+
 /*-----------------------*/
 @keyframes aumentarPokemon{
     0%{
