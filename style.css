@@ -496,10 +496,14 @@
         bottom: 106px;
     }
     #pesquisaPokemon{
-        width:160px;
-        font-size:9px;
+        border: solid black 2px;
+        border-radius: 1rem;
+        position: absolute;
+        top: 10px;
+        left: 1px;
+        width: 120px;
     }
-        
+
 }
 /*@media screen and (min-height:700px){
     .externo{

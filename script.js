@@ -51,6 +51,7 @@ function fecharPokedex() {
     txt.innerHTML = ''
     nomePokemon.innerHTML = ''
     tipos.innerHTML = ''
+    pesquisa.innerHTML = ''
 }
 function ligarTela() {
     let tela = document.querySelector('.tela')
@@ -673,9 +674,8 @@ function trocaDePokemon() {
     }
 }
 //Pesquisa Pokemon//
-function pesquisarPokemon() {
 let pesquisa = document.querySelector('#pesquisaPokemon').value.toUpperCase()
-
+function pesquisarPokemon() {
     if (pesquisa === 'BULBASSAURO' || pesquisa === 'BULBASSAUR' || pesquisa === 'BULBASAURO' || pesquisa === 'BULBASAUR') {
         let tela = document.querySelector('.tela')
         let pokemonAparecer = `<img src='pokemon-number1.png' class='pokemon-text1'>`
@@ -705,7 +705,7 @@ let pesquisa = document.querySelector('#pesquisaPokemon').value.toUpperCase()
         txt.innerHTML = 'Um pequeno Pokémon de Fogo com uma chama em sua cauda, Charmander busca constantemente fortalecer-se até tornar-se um poderoso Charizard, lançando chamas em seus oponentes.'
         tipos.innerHTML = fire
     }else if(pesquisa === ''){
-        
+
     }
 }
 let botaoPesquisar = document.querySelector('#botaoPesquisaPokemon')
