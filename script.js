@@ -676,7 +676,7 @@ function trocaDePokemon() {
     }
 }
 //Pesquisa Pokemon//
-let limparPesquisa = document.querySelector('#pesquisaPokemon');
+let limparPesquisa = document.querySelector('#pesquisaPokemon').value;
 function pesquisarPokemon() {
     var pesquisa = document.querySelector('#pesquisaPokemon').value.toUpperCase()
     if (pesquisa === 'BULBASSAURO' || pesquisa === 'BULBASSAUR' || pesquisa === 'BULBASAURO' || pesquisa === 'BULBASAUR') {
