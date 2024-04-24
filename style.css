@@ -338,7 +338,7 @@
     background-color: purple;
     border-radius: 1rem;
     color: white;
-    font-size: 10px;
+    font-size: 13px;
     text-align: center;
     border: 1px solid black;
     font-family: 'Pixelify Sans';
@@ -391,26 +391,7 @@
 /*-----------------*/
 
 /*-------------------*/
-/*Pesquisa Pokemon*/
-#pesquisaPokemon{
-    border: solid black 2px;
-    border-radius: 1rem;
-    position: absolute;
-    top: 10px;
-    left: 1px;
-}
-#botaoPesquisaPokemon{
-    border:  solid black 2px;
-    border-radius: 5px;
-    position: absolute;
-    top: 10px;
-    right: 1px;
-    font-family: 'Pixelify Sans';
-    text-align: center;
-}
-#botaoPesquisaPokemon:hover{
-    opacity: 0.8;
-}
+
 
 /*-----------------------*/
 @keyframes aumentarPokemon{
@@ -472,9 +453,3 @@
         bottom: 106px;
     }
 }
-/*@media screen and (min-height:700px){
-    .externo{
-        position: relative;
-        top: 15px;
-    }
-}*/
