@@ -2,7 +2,7 @@ let triangulo = document.querySelector('.trianguloPorta')
 let txt = document.querySelector('.texto')
 let fundoTxt = document.querySelector('.fundoTexto')
 let nomePokemon = document.querySelector('.nomePokemon')
-
+let limparPesquisa = document.querySelector('#pesquisaPokemon');
 //TIPOS DE POKEMON//
 let tipos = document.querySelector('.tipos')
 let poison = `<p class = 'poison'>Venenoso</p>`
@@ -53,7 +53,7 @@ function fecharPokedex() {
     nomePokemon.innerHTML = ''
     tipos.innerHTML = ''
     pesquisa.innerHTML = ''
-    limparPesquisa.innerHTML = ''
+    limparPesquisa.value = ''
 }
 function ligarTela() {
     let tela = document.querySelector('.tela')
@@ -676,7 +676,10 @@ function trocaDePokemon() {
     }
 }
 //Pesquisa Pokemon//
-let limparPesquisa = document.querySelector('#pesquisaPokemon').value;
+
+
+
+
 function pesquisarPokemon() {
     var pesquisa = document.querySelector('#pesquisaPokemon').value.toUpperCase()
     if (pesquisa === 'BULBASSAURO' || pesquisa === 'BULBASSAUR' || pesquisa === 'BULBASAURO' || pesquisa === 'BULBASAUR') {
@@ -875,7 +878,7 @@ function pesquisarPokemon() {
         nomePokemon.innerHTML = 'Sandslash'
         txt.innerHTML = ' A evolução de Sandshrew, Sandslash é um Pokémon de Terra com garras afiadas e uma habilidade de rolar em uma bola para atacar, defendendo-se com habilidade e força.'
         tipos.innerHTML = ground
-    } else if (pesquisa === 'NIDORAN♀') {
+    } else if (pesquisa === 'NIDORANF') {
         let tela = document.querySelector('.tela')
         let pokemonAparecer = `<img src='pokemon-number29.png' class='pokemon-text29'>`
         tela.innerHTML = pokemonAparecer
@@ -896,7 +899,7 @@ function pesquisarPokemon() {
         nomePokemon.innerHTML = 'Nidoqueen'
         txt.innerHTML = 'O final de Nidoran♀, Nidoqueen é uma força a ser reconhecida, com habilidades de luta e proteção impressionantes, liderando sua família com determinação.'
         tipos.innerHTML = poison + ground
-    } else if (pesquisa === 'NIDORAN♂') {
+    } else if (pesquisa === 'NIDORANM') {
         let tela = document.querySelector('.tela')
         let pokemonAparecer = `<img src='pokemon-number32.png' class='pokemon-text32'>`
         tela.innerHTML = pokemonAparecer
