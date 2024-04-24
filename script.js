@@ -64,6 +64,7 @@ function desligarTela() {
     tela.style.backgroundColor = '#000000'
     tela.innerHTML = `<img src='fundoPreto.png'> `
 }
+
 function trocaDePokemon() {
     let tela = document.querySelector('.tela')
     let aleatorizarPokemon = Math.floor(Math.random() * 151) + 1
@@ -1749,6 +1750,58 @@ function pesquisarPokemon() {
        }
     }
 }
+/*RODAR POKEMON DE NOVO*/
+let botaoRodar = document.querySelector('.reiniciar')
+botaoRodar.addEventListener('click', trocaDePokemon)
+/*---------------------*/
+/*Sobre Mim*/
+let PokedexDentro = document.querySelector('.PokedexDentro')
+let botaoSobreMim = document.querySelector('.sobreMim')
+
+let caixa = document.createElement('div')
+let apresentacao = document.createElement('p')
+let labelGithub = document.createElement('p')
+let close = document.createElement('img')
+let closeCaptions = document.createElement('p')
+closeCaptions.innerHTML = '&copy Todos os direitos reservados André Holovati 2024'
+closeCaptions.style.fontSize = '10px'
+close.src =  'close.png'
+close.className = 'close'
+close.style.height = '15px'
+close.style.width = '15px'
+labelGithub.innerHTML = 'Github:'
+let github = document.createElement('a')
+github.href = 'https://github.com/Dequiz'
+github.innerHTML = 'Acesse aqui'
+github.style.color = 'white'
+github.target = 'blank_'
+caixa.className = 'apresentacao'
+
+
+apresentacao.innerHTML = 'Criador do projeto: André Holovati'
+caixa.appendChild(apresentacao)
+caixa.appendChild(labelGithub)
+caixa.appendChild(close)
+caixa.appendChild(closeCaptions)
+labelGithub.appendChild(github)
+PokedexDentro.appendChild(caixa)
+function sobreMim(){
+
+ caixa.style.zIndex = '1'
+ caixa.style.display = 'flex'
+}
+botaoSobreMim.addEventListener('click',sobreMim)
+//Fechar caixa
+let fecharApresentacao = document.querySelector('.close')
+fecharApresentacao.addEventListener('click', fecharCaixa)
+function fecharCaixa(){
+    caixa.style.zIndex = '-1'
+    caixa.style.display = 'none'
+}
+
+//--------- 
+// botaoRodar.addEventListener('click')
+/*------------------------------------*/
 let botaoPesquisar = document.querySelector('#botaoPesquisaPokemon')
 botaoPesquisar.addEventListener('click', pesquisarPokemon)
 //----------------//
