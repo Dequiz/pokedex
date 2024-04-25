@@ -1037,7 +1037,7 @@ function pesquisarPokemon() {
         let tela = document.querySelector('.tela')
         let pokemonAparecer = `<img src='pokemon-number51.png' class='pokemon-text51'>`
         tela.innerHTML = pokemonAparecer
-        nomePokemon.innerHTML = Dugtrio
+        nomePokemon.innerHTML = 'Dugtrio'
         txt.innerHTML = ' A evolução de Diglett, Dugtrio é formado por três Digletts unidos e é capaz de cavar rapidamente túneis e emboscar presas, atacando com força e coordenação.'
         tipos.innerHTML = ground
     } else if (pesquisa === 'MEOWTH') {
