@@ -571,7 +571,9 @@
         left: 1px;
         width: 160px;
     }
-
+     .PokedexDentro{
+        top: -100px;
+    }
 }
 @media screen and (min-width:1400px){
     .PokedexDentro{
